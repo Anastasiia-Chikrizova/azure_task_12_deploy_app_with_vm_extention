@@ -16,6 +16,8 @@ mkdir /app
 git clone https://github.com/Anastasiia-Chikrizova/azure_task_12_deploy_app_with_vm_extention.git
 cp -r azure_task_12_deploy_app_with_vm_extention/app/* /app
 
+pip3 install -r /app/requirements.txt
+
 # create a service for the app via systemctl and start the app
 mv /app/todoapp.service /etc/systemd/system/
 systemctl daemon-reload
